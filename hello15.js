@@ -9,13 +9,4 @@ export default class extends Component {
     get getAuthToken() {
         return this.lianaSession.authToken;
     }
-
-    get testValue() {
-      return 'hello'
-    }
-
-    @computed('getAuthToken')
-    get safeAuthToken() {
-      return JSON.stringify(this.getAuthToken);
-    }
 }
