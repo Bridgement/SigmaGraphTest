@@ -13,7 +13,7 @@ export default class extends Component {
     get getScriptTokenHtml() {
       return `
         <script>
-          var token = '${this.getAuthToken}';
+          window.token = '${this.getAuthToken}';
         </script>
       `
     }
