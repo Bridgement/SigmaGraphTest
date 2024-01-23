@@ -39,7 +39,7 @@
             fetch("http://localhost:3000/api/neo4j-graph/userGraph", {
                 method: "GET",
                 headers: {
-                    "Authorization": `Bearer {{getAuthToken}}`,
+                    "Authorization": `Bearer {{this.getAuthToken}}`,
                     'Content-Type': 'application/json'
                 }
             }).then((response) => response.json())
