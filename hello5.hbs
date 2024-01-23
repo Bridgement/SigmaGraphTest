@@ -1,8 +1,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/2.0.0-alpha34/sigma.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/graphology/0.25.4/graphology.umd.min.js"></script>
-<button type="button" {{on "click" this.sayHello}}>
-    {{this.text}}
-</button>
+
+<style>
+    html,
+    body,
+    #sigma-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+</style>
+<div id="sigma-container"></div>
 
 <script>
     var Graph = window.graphology;
